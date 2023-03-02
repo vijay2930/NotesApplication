@@ -7,8 +7,8 @@ import java.util.List;
 class MyFolderController implements MyFolderControllerViewCallBack, MyFolderControllerModelCallBack {
     private MyFolderViewCallBack myFolderView;
     private MyFolderModelCallBack myFolderModel;
-    public MyFolderController(MyFolderViewCallBack myNotesView) {
-        this.myFolderView =myNotesView;
+    public MyFolderController(MyFolderViewCallBack myFolderView) {
+        this.myFolderView =myFolderView;
         this.myFolderModel =new MyFolderModel(this);
     }
 

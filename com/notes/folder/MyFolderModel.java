@@ -8,8 +8,8 @@ import java.util.List;
 class MyFolderModel implements MyFolderModelCallBack {
     private MyFolderControllerModelCallBack myFolderController;
     private Repository repository;
-    public MyFolderModel(MyFolderControllerModelCallBack myNotesController) {
-        this.myFolderController =myNotesController;
+    public MyFolderModel(MyFolderControllerModelCallBack myFolderController) {
+        this.myFolderController =myFolderController;
         this.repository=Repository.getInstance();
     }
     @Override
